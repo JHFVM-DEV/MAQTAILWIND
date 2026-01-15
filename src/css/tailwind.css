@@ -1,12 +1,1 @@
 @import "tailwindcss";
-
-@theme{
-    --color-fondo: #100c26;
-
-
-}
-:root{
-    --ruta-logo: url('../img/logo.svg');
-    --ruta-menu: url('../img/menu.svg');
-    --ruta-close: url('../img/close.svg');
-}

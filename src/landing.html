@@ -10,17 +10,20 @@
 </head>
 
 <body class="bg-white ">
-  <nav class="py-5 border-2">
+  <nav class="py-5 border-2
+    md:bg-emerald-200">
     <div class="flex w-9/10 mx-auto justify-between">
       <a href="" class="relative z-10">
-        <img class="h-8" src="./img/logo.svg" alt="Logo página">
+        <img class="h-10 " src="./img/logo.svg" alt="Logo página">
       </a>
-      <label class="z-10 cursor-pointer w-10 h-10 bg-(image:--ruta-menu) bg-cover has-checked:bg-(image:--ruta-close) transition-all peer/label">
+      <label class="z-10 cursor-pointer w-10 h-10 bg-(image:--ruta-menu) bg-cover has-checked:bg-(image:--ruta-close) transition-all peer/label
+        md:hidden">
         <input type="checkbox" name="" value="" class="hidden">
       </label>
 
-      <ul class="absolute inset-0 flex flex-col gap-8 items-center justify-center -translate-y-full peer-has-checked/label:translate-0 transition-transform">
-        <li class="">
+      <ul class="absolute inset-0 flex flex-col gap-8 items-center justify-center -translate-y-full peer-has-checked/label:translate-0 transition-transform
+       md:static md:translate-0 md:flex-row md:gap-6 md:items-center">
+        <li>
           <a href="">Acerca de</a>
         </li>
         <li>
@@ -32,7 +35,7 @@
         <li>
           <a href="">Blog</a>
         </li>
-        <li class="bg-fondo py-4 px-6 rounded-full text-white">
+        <li class="bg-fondo py-4 px-6 rounded-full text-white md:text-black md:bg-white">
           <a href="">Iniciar Sesión</a>
         </li>
       </ul>
