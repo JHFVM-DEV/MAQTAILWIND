@@ -6,13 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="./css/output.css">
-  </head>
+</head>
 </head>
 
-<body>
-  <nav>
-    <div>
-      <a href="./img/logo.svg"></a>
+<body class="bg-white ">
+  <nav class="py-5 border-2">
+    <div class="flex w-9/10 mx-auto justify-between">
+      <a href="" class="relative z-10">
+        <img class="h-8" src="./img/logo.svg" alt="Logo página">
+      </a>
+      <label class="z-10 cursor-pointer w-10 h-10 bg-(image:--ruta-menu) bg-cover has-checked:bg-(image:--ruta-close) transition-all peer/label">
+        <input type="checkbox" name="" value="" class="hidden">
+      </label>
+
+      <ul class="absolute inset-0 flex flex-col gap-8 items-center justify-center -translate-y-full peer-has-checked/label:translate-0 transition-transform">
+        <li class="">
+          <a href="">Acerca de</a>
+        </li>
+        <li>
+          <a href="">Servicios</a>
+        </li>
+        <li>
+          <a href="">Contacto</a>
+        </li>
+        <li>
+          <a href="">Blog</a>
+        </li>
+        <li class="bg-fondo py-4 px-6 rounded-full text-white">
+          <a href="">Iniciar Sesión</a>
+        </li>
+      </ul>
+
     </div>
   </nav>
 </body>
