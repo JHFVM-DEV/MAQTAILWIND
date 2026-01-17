@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+@theme{
+    --color-primary: #02187b;
+    --color-secondary: #0284c7;
+    --color-third: #164de5;
+    --color-fourth: #1e89ef;
+    --color-fifth: #5cdffb;
+    --color-background: #0e1831;
+
+    #0b7e7f,#13947d,#1ba37d,#20ae7c,#35bc88,
+}
+
+:root{
+    --ruta-menu: url('../img/menu.svg');
+    --ruta-close: url('../assets/close.svg');
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1000;
+    fill: transparent;       
+  }
+  50% {
+    fill: transparent;       
+  }
+  100% {
+    stroke-dashoffset: 0;    
+    fill: currentColor;      
+  }
+}
+
+.logo-animado path {
+  stroke: currentColor;
+  stroke-width: 1px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 2.5s ease-in-out forwards;
+}

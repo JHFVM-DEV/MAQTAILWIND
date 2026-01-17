@@ -11,31 +11,56 @@
 
 <body class="bg-white ">
   <nav class="py-5 border-2
-    md:bg-emerald-200">
+    bg-background">
     <div class="flex w-9/10 mx-auto justify-between">
-      <a href="" class="relative z-10">
-        <img class="h-10 " src="./img/logo.svg" alt="Logo página">
+      <a href="#" class="z-50 logo-animado text-white hover:text-gray-400 transition-colors duration-300">
+        <svg class="h-12 w-auto fill-current" viewBox="0 0 249.43 59.16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 2.52,13.69 25.78,0.06 48.94,13.69 41.49,18.08 25.68,8.75 9.84,18.08 Z" />
+          <path d="m 23.11,16.16 -10.83,6.38 0.03,12.62 10.9,-6.31" />
+          <path d="m 28.25,16.13 10.83,6.34 0.07,12.85 -10.96,-6.47" />
+          <path d="m 44.12,22.44 7.42,-4.29 -0.06,27.26 -23.19,13.62 -0.05,-8.69 15.87,-9.34" />
+          <path d="M 25.72,46.05 36.53,39.68 25.76,33.15 14.86,39.47 Z" />
+          <path d="m 0,18.22 7.31,4.28 V 41.13 l 15.87,9.34 -0.05,8.65 -23.12,-13.67" />
+
+          <path
+            d="M 60.29,1.93 A 1.53,1.93 0 0 1 58.76,3.86 1.53,1.93 0 0 1 57.23,1.93 1.53,1.93 0 0 1 58.76,0 1.53,1.93 0 0 1 60.29,1.93 Z" />
+          <path
+            d="m 60.43,57.23 a 1.53,1.93 0 0 1 -1.53,1.93 1.53,1.93 0 0 1 -1.53,-1.93 1.53,1.93 0 0 1 1.53,-1.93 1.53,1.93 0 0 1 1.53,1.93 z" />
+          <path d="M 60.36,57 60.26,1.98 H 57.23 L 57.41,56.81" />
+
+          <g aria-label="TAILOREDCODE">
+            <path
+              d="m 67.04,9.03 h 7.76 V 24.55 h 3.88 V 9.03 h 7.76 V 5.15 h -19.4 z M 105.84,24.55 H 109.73 V 5.15 H 90.32 V 24.55 h 3.88 v -7.76 H 105.84 Z M 94.2,9.03 H 105.84 V 12.91 H 94.2 Z m 19.4,0 h 7.76 V 20.67 h -7.76 v 3.88 h 19.4 v -3.88 h -7.76 V 9.03 h 7.76 V 5.15 h -19.4 z m 23.28,15.52 h 19.4 v -3.88 H 140.77 V 5.15 h -3.88 z m 23.28,0 h 19.4 V 5.15 h -19.4 z m 3.88,-15.52 h 11.64 V 20.67 H 164.05 Z M 183.46,24.55 h 3.88 v -7.76 h 7.76 v 3.88 h 3.88 v 3.88 h 3.88 v -3.88 h -3.88 v -3.88 h 3.88 V 9.03 h -3.88 V 5.15 H 183.46 Z M 198.98,9.03 V 12.91 H 187.34 V 9.03 Z m 7.76,15.52 h 19.4 v -3.88 h -15.52 v -3.88 h 7.76 v -3.88 h -7.76 V 9.03 h 15.52 V 5.15 h -19.4 z m 23.28,0 h 15.52 v -3.88 H 233.9 V 9.03 h 11.64 V 20.67 h 3.88 V 9.03 h -3.88 V 5.15 h -15.52 z" />
+            <path
+              d="m 67.04,54.72 h 19.4 v -3.88 H 70.92 V 39.2 h 15.52 v -3.88 h -19.4 z m 23.28,0 H 109.73 V 35.31 H 90.32 Z m 3.88,-15.52 H 105.84 V 50.84 H 94.2 Z m 19.4,15.52 h 15.52 v -3.88 H 117.49 V 39.2 h 11.64 v 11.64 h 3.88 V 39.2 h -3.88 v -3.88 h -15.52 z m 23.28,0 h 19.4 v -3.88 h -15.52 v -3.88 h 7.76 v -3.88 h -7.76 v -3.88 h 15.52 v -3.88 h -19.4 z" />
+          </g>
+        </svg>
       </a>
-      <label class="z-10 cursor-pointer w-10 h-10 bg-(image:--ruta-menu) bg-cover has-checked:bg-(image:--ruta-close) transition-all peer/label
+      <label class="relative z-50 cursor-pointer w-10 h-10 bg-(image:--ruta-menu) bg-cover has-checked:bg-(image:--ruta-close) transition-all peer/label
         md:hidden">
         <input type="checkbox" name="" value="" class="hidden">
       </label>
 
-      <ul class="absolute inset-0 flex flex-col gap-8 items-center justify-center -translate-y-full peer-has-checked/label:translate-0 transition-transform
-       md:static md:translate-0 md:flex-row md:gap-6 md:items-center">
+      <ul class="fixed inset-0 h-screen w-full bg-slate-900 text-white flex flex-col gap-8 items-center justify-center 
+      -translate-y-full transition-transform duration-300 ease-in-out z-40
+      
+      peer-has-checked/label:translate-y-0
+      
+      md:static md:h-auto md:w-auto md:bg-transparent md:flex-row md:translate-y-0 md:z-auto md:transition-none
+    ">
         <li>
-          <a href="">Acerca de</a>
+          <a href="" class="hover:text-fourth">Acerca de</a>
         </li>
         <li>
-          <a href="">Servicios</a>
+          <a href="" class="hover:text-fourth">Servicios</a>
         </li>
         <li>
-          <a href="">Contacto</a>
+          <a href="" class="hover:text-fourth">Contacto</a>
         </li>
         <li>
-          <a href="">Blog</a>
+          <a href="" class="hover:text-fourth">Blog</a>
         </li>
-        <li class="bg-fondo py-4 px-6 rounded-full text-white md:text-black md:bg-white">
+        <li class=" py-4 px-6 rounded-full text-white md:text-black md:bg-white hover:bg-background transition-colors duration-300 hover:text-white hover:transition-all">
           <a href="">Iniciar Sesión</a>
         </li>
       </ul>
