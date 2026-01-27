@@ -13,7 +13,7 @@
 
 :root{
     --ruta-menu: url('../img/menu.svg');
-    --ruta-close: url('../assets/close.svg');
+    --ruta-close: url('../img/close.svg');
 }
 
 @keyframes draw {

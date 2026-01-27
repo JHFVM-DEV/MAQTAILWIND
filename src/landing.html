@@ -10,11 +10,11 @@
 </head>
 
 <body class="bg-white ">
-  <nav class="py-5 border-2
+  <nav class="py-2 border-b border-2
     bg-dark">
-    <div class="flex w-9/10 mx-auto justify-between">
-      <a href="#" class="z-50 logo-animado text-white hover:text-gray-400 transition-colors duration-300">
-        <svg class="h-12 w-auto fill-current" viewBox="0 0 249.43 59.16" xmlns="http://www.w3.org/2000/svg">
+    <div class="flex w-9/10 mx-auto justify-between group">
+      <a href="#" class="z-50 logo-animado text-white hover:text-green-200 transition-colors duration-300">
+        <svg class="h-8 md:h-12 w-auto fill-current" viewBox="0 0 249.43 59.16" xmlns="http://www.w3.org/2000/svg">
           <path d="M 2.52,13.69 25.78,0.06 48.94,13.69 41.49,18.08 25.68,8.75 9.84,18.08 Z" />
           <path d="m 23.11,16.16 -10.83,6.38 0.03,12.62 10.9,-6.31" />
           <path d="m 28.25,16.13 10.83,6.34 0.07,12.85 -10.96,-6.47" />
@@ -36,18 +36,31 @@
           </g>
         </svg>
       </a>
-      <label class="relative z-50 cursor-pointer w-10 h-10 bg-(image:--ruta-menu) bg-cover has-checked:bg-(image:--ruta-close) transition-all peer/label
-        md:hidden">
-        <input type="checkbox" name="" value="" class="hidden">
+      <label
+        class="group relative z-50 cursor-pointer w-10 h-10 flex items-center justify-center transition-all md:hidden text-gray-900 dark:text-white">
+
+        <input type="checkbox" name="" value="" class="hidden peer">
+
+        <svg class="w-8 h-8 stroke-current block group-has-checked:hidden transition-transform duration-300"
+          viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <svg class="w-8 h-8 fill-current hidden group-has-checked:block transition-transform duration-300"
+          viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" />
+        </svg>
+
       </label>
 
-      <ul class="fixed inset-0 h-screen w-full bg-slate-900 text-white flex flex-col gap-8 items-center justify-center 
+      <ul class="fixed inset-0 h-screen w-full bg-dark text-white flex flex-col gap-8 items-center justify-center 
       -translate-y-full transition-transform duration-300 ease-in-out z-40
       
-      peer-has-checked/label:translate-y-0
+      group-has-checked:translate-y-0
       
       md:static md:h-auto md:w-auto md:bg-transparent md:flex-row md:translate-y-0 md:z-auto md:transition-none
-    ">
+">
         <li>
           <a href="" class="hover:text-fourth">Acerca de</a>
         </li>
@@ -60,11 +73,11 @@
         <li>
           <a href="" class="hover:text-fourth">Blog</a>
         </li>
-        <li class=" py-4 px-6 rounded-full text-white md:text-black md:bg-white hover:bg-background transition-colors duration-300 hover:text-white hover:transition-all">
+        <li
+          class=" py-4 px-6 rounded-full text-white md:text-black md:bg-white hover:bg-background transition-colors duration-300 hover:text-white hover:transition-all">
           <a href="">Iniciar Sesión</a>
         </li>
       </ul>
-
     </div>
   </nav>
 </body>
