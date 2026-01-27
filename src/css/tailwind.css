@@ -13,7 +13,8 @@
 
 :root{
     --ruta-menu: url('../img/menu.svg');
-    --ruta-close: url('../assets/close.svg');
+    --ruta-close: url('../img/close.svg');
+    --hero: linear-gradient(#000000b7, #000000), url('../img/hero.jpg');
 }
 
 @keyframes draw {
