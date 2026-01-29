@@ -11,9 +11,9 @@
   <title>TailoredCode</title>
 </head>
 
-<body class="bg-white ">
-  <nav class="py-5 border-2
-    bg-dark">
+<body class="bg-gray-200">
+  <nav class="py-5 border-b-2
+    bg-background">
     <div class="flex w-9/10 mx-auto justify-between">
       <a href="#" class="z-50 logo-animado text-white hover:text-gray-400 transition-colors duration-300">
         <svg class="h-12 w-auto fill-current" viewBox="0 0 249.43 59.16" xmlns="http://www.w3.org/2000/svg">
@@ -75,15 +75,15 @@
     <h1 class="text-4xl font-bold ">
       HOLA
     </h1>
-    <p class="md:w-1/2">
+    <p class="md:w-2/3">
       Esta es una pagina de prueba para todas mis aplicaciones web, usando Tailwind CSS mediante CLI.
     </p>
-    <a href="" class="bg-dark text-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition-colors duration-500 mt-4">
+    <a href="" class="bg-background text-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition-colors duration-500 mt-4">
       Empezar ahora
     </a>
   </section>
 
-  <section class="w-9/10 mx-auto py-15 text-white">
+  <section class="w-9/10 mx-auto py-15 text-black">
     <h2 class="text-3xl md:text-4xl font-bold mb-4 ">
       Sobre nosotros
     </h2>
@@ -91,8 +91,32 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat quis dignissimos soluta dolorum, ratione minus ad numquam facere tempore, voluptatum suscipit voluptatibus, earum iusto! Iure adipisci aut illo esse.
     </p>
 
-    <div class="mt-10 flex flex-wrap justify-between gap-10 ">
-      <article class="border border-dark bg-secondary rounded-xl p-8 space-y-4 ">
+    <div class="mt-10 flex flex-wrap justify-between gap-10 text-white">
+      <article class="border border-dark bg-secondary rounded-xl w-full max-w-70 p-8 space-y-4 ">
+        <img src="img/close.svg" alt="Close" class="w-8 mb-4" width="32" height="32">
+        <h3 class="text-xl font-bold">HOLA</h3>
+        <p class="font-light">
+          prueba de cards
+        </p>
+      </article>
+
+      <article class="border border-dark bg-secondary rounded-xl w-full max-w-70 p-8 space-y-4 ">
+        <img src="img/close.svg" alt="Close" class="w-8 mb-4" width="32" height="32">
+        <h3 class="text-xl font-bold">HOLA</h3>
+        <p class="font-light">
+          prueba de cards
+        </p>
+      </article>
+
+      <article class="border border-dark bg-secondary rounded-xl w-full max-w-70 p-8 space-y-4 ">
+        <img src="img/close.svg" alt="Close" class="w-8 mb-4" width="32" height="32">
+        <h3 class="text-xl font-bold">HOLA</h3>
+        <p class="font-light">
+          prueba de cards
+        </p>
+      </article>
+
+      <article class="border border-dark bg-secondary rounded-xl w-full max-w-70 p-8 space-y-4 ">
         <img src="img/close.svg" alt="Close" class="w-8 mb-4" width="32" height="32">
         <h3 class="text-xl font-bold">HOLA</h3>
         <p class="font-light">
@@ -101,6 +125,27 @@
       </article>
     </div>
   </section>
+
+  <footer class="border-t border-black py-15 md:py-4 ">
+    <div class="w-9/10 mx-auto text-black">
+      <nav >
+          <ul class="flex gap-8 justify-evenly flex-wrap **:hover:underline ">
+            <li>
+              <a href="" class="">Politica de privacidad</a>
+            </li>
+            <li>
+              <a href="">Términos y condiciones</a>
+            </li>
+            <li>
+              <a href="">Contacto</a>
+            </li>
+          </ul>
+      </nav>
+      <p class="text-center my-5">
+        &copy; 2026 TailoredCode. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
