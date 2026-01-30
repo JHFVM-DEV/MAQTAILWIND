@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta name="description"
+    content="HOLA esta es una pagina de prueba para todas mis aplicaciones web, usando Tailwind CSS mediante CLI.">
+  <meta name="keywords"
+    content="TailoredCode, Tailwind CSS, Aplicaciones Web, Desarrollo Web, Diseño Web, Frontend, HTML, CSS, JavaScript">
   <link rel="stylesheet" href="./css/output.css">
-</head>
+  <title>TailoredCode</title>
 </head>
 
-<body class="bg-white ">
-  <nav class="py-2 border-b border-2
-    bg-dark">
+<body class="bg-background">
+  <nav class="py-5 border-b-2 border-bordes
+    bg-background">
     <div class="flex w-9/10 mx-auto justify-between group">
-      <a href="#" class="z-50 logo-animado text-white hover:text-green-200 transition-colors duration-300">
-        <svg class="h-8 md:h-12 w-auto fill-current" viewBox="0 0 249.43 59.16" xmlns="http://www.w3.org/2000/svg">
+      <a href="#" class="z-50 logo-animado text-white hover:text-gray-400 transition-colors duration-300">
+        <svg class="h-8/10 w-auto fill-current" viewBox="0 0 249.43 59.16" xmlns="http://www.w3.org/2000/svg">
           <path d="M 2.52,13.69 25.78,0.06 48.94,13.69 41.49,18.08 25.68,8.75 9.84,18.08 Z" />
           <path d="m 23.11,16.16 -10.83,6.38 0.03,12.62 10.9,-6.31" />
           <path d="m 28.25,16.13 10.83,6.34 0.07,12.85 -10.96,-6.47" />
@@ -37,7 +40,8 @@
         </svg>
       </a>
       <label
-        class="group relative z-50 cursor-pointer w-10 h-10 flex items-center justify-center transition-all md:hidden text-gray-900 dark:text-white">
+        class="group relative z-50 cursor-pointer w-10 h-10 flex items-center justify-center transition-all md:hidden text-gray-900 dark:text-white"
+        aria-label="Abrir menú">
 
         <input type="checkbox" name="" value="" class="hidden peer">
 
@@ -54,13 +58,13 @@
 
       </label>
 
-      <ul class="fixed inset-0 h-screen w-full bg-dark text-white flex flex-col gap-8 items-center justify-center 
+      <ul class="fixed inset-0 h-screen w-full bg-background text-white flex flex-col gap-8 items-center justify-center 
       -translate-y-full transition-transform duration-300 ease-in-out z-40
       
       group-has-checked:translate-y-0
       
       md:static md:h-auto md:w-auto md:bg-transparent md:flex-row md:translate-y-0 md:z-auto md:transition-none
-">
+      ">
         <li>
           <a href="" class="hover:text-fourth">Acerca de</a>
         </li>
@@ -74,12 +78,94 @@
           <a href="" class="hover:text-fourth">Blog</a>
         </li>
         <li
-          class=" py-4 px-6 rounded-full text-white md:text-black md:bg-white hover:bg-background transition-colors duration-300 hover:text-white hover:transition-all">
+          class=" py-2 px-6 rounded-full text-white md:text-black md:bg-white hover:bg-background transition-colors duration-300 hover:text-white hover:transition-all cursor-pointer">
           <a href="">Iniciar Sesión</a>
         </li>
       </ul>
     </div>
   </nav>
+
+  <section class="bg-(image:--hero) bg-center bg-cover w-9/10 mx-auto rounded-3xl md:min-h-120 min-h-100 text-white p-8 my-15 flex flex-col gap-4 justify-center items-center text-center 
+  md:text-left md:justify-end md:items-start md:pb-20 ">
+    <h1 class="text-4xl font-bold ">
+      HOLA
+    </h1>
+    <h1 class="text-5xl font-extrabold bg-linear-to-r from-white to-gray-500 bg-clip-text text-transparent">
+      TRANSFORMA TU CÓDIGO
+    </h1>
+    <p class="md:w-2/3">
+      Esta es una pagina de prueba para todas mis aplicaciones web, usando Tailwind CSS mediante CLI.
+    </p>
+    <a href=""
+      class="bg-background text-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition-colors duration-500 mt-4">
+      Empezar ahora
+    </a>
+  </section>
+
+  <section class="w-9/10 mx-auto pt-2 pb-15 text-white">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 ">
+      Sobre nosotros
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat quis dignissimos soluta dolorum, ratione
+      minus ad numquam facere tempore, voluptatum suscipit voluptatibus, earum iusto! Iure adipisci aut illo esse.
+    </p>
+
+    <div class="mt-10 flex flex-wrap justify-between gap-10 text-white **:bg-card ">
+      <article class=" rounded-xl w-full max-w-70 p-8 space-y-4 ">
+        <img src="img/close.svg" alt="Close" class="w-8 mb-4" width="32" height="32">
+        <h3 class="text-xl font-bold">HOLA</h3>
+        <p class="font-light">
+          prueba de cards
+        </p>
+      </article>
+
+      <article class="bg-secondary rounded-xl w-full max-w-70 p-8 space-y-4 ">
+        <img src="img/close.svg" alt="Close" class="w-8 mb-4" width="32" height="32">
+        <h3 class="text-xl font-bold">HOLA</h3>
+        <p class="font-light">
+          prueba de cards
+        </p>
+      </article>
+
+      <article class="bg-secondary rounded-xl w-full max-w-70 p-8 space-y-4 ">
+        <img src="img/close.svg" alt="Close" class="w-8 mb-4" width="32" height="32">
+        <h3 class="text-xl font-bold">HOLA</h3>
+        <p class="font-light">
+          prueba de cards
+        </p>
+      </article>
+
+      <article class="bg-secondary rounded-xl w-full max-w-70 p-8 space-y-4 ">
+        <img src="img/close.svg" alt="Close" class="w-8 mb-4" width="32" height="32">
+        <h3 class="text-xl font-bold">HOLA</h3>
+        <p class="font-light">
+          prueba de cards
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="border-t bg-background border-bordes py-15 md:py-4 text-white">
+    <div class="w-9/10 mx-auto">
+      <nav>
+        <ul class="flex gap-8 justify-evenly flex-wrap **:hover:underline ">
+          <li>
+            <a href="" class="">Politica de privacidad</a>
+          </li>
+          <li>
+            <a href="">Términos y condiciones</a>
+          </li>
+          <li>
+            <a href="">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="text-center my-3">
+        &copy; 2026 TailoredCode. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>

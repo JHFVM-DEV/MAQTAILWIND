@@ -1,19 +1,15 @@
 @import "tailwindcss";
 
 @theme{
-    --color-primary: #0b7e7f;
-    --color-secondary: #13947d;
-    --color-third: #1ba37d;
-    --color-fourth: #20ae7c;
-    --color-fifth: #35bc88;
-    --color-background: #0e1831;
-    --color-dark: #143f17;
-    --color-light: #e0f7fa;
+    --color-background: #050626;
+    --color-bordes: #4a5565;
+    --color-card: #292A3F;
 }
 
 :root{
     --ruta-menu: url('../img/menu.svg');
     --ruta-close: url('../img/close.svg');
+    --hero: linear-gradient(#000000b7, #000000), url('../img/hero.jpg');
 }
 
 @keyframes draw {
